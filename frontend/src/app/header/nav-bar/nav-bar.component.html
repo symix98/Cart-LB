@@ -22,7 +22,7 @@
         <a href="https://api.whatsapp.com/message/X22V52KVNTA3N1" target="_blank">Whatsapp <i
             class="ri-whatsapp-line"></i>
         </a>
-        <a mat-button [matMenuTriggerFor]="beforeMenu">{{user || 'login'}}<i class="ri-user-line"></i></a>
+        <a id="dropDownAnchor" mat-button [matMenuTriggerFor]="beforeMenu">{{user || 'login'}}<i class="ri-user-line"></i></a>
         <mat-menu #beforeMenu="matMenu" xPosition="before">
           <button *ngIf="user" mat-menu-item (click)="logout()">Logout</button>
           <button *ngIf="!user" mat-menu-item [routerLink]="['/login']" routerLinkActive="active-link"

@@ -5,35 +5,29 @@
     box-sizing: border-box;
     scroll-behavior: smooth; 
 }
-.container-fluid{
-    background-color: #191f22;
-    max-height: 3.5rem;
-}
 #logo{
     width: 6rem;
     height: 3rem;
 }
 .container-fluid{
+    background-color: whitesmoke;
     padding: .5rem 1rem .5rem 1rem;
 }
-.dropdown-menu > li{
-    max-width: 10px;
+a{
+    text-decoration: none;
+    color: #000;
 }
 .d-flex > a:not(:first-child){
     margin-left: 1rem;
 }
-.dropdown-item , #user{
-    cursor: pointer;
-}
 #orderNowBesideLogo{
     display: none;
 }
-a{
+#orderNowBesideLogo{
+    display: inline-block;
     text-decoration: none;
-    color: whitesmoke;
-}
-.dropdown-item{
     color: #000;
+    margin-left: 1rem;
 }
 @media only screen and (max-width: 991px) {
     .d-flex{
