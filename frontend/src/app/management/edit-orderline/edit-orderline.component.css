@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.btn{
+    margin-top: 1rem;
+}
+span{
+    font-weight: 500;
+}
+table, th, td {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+th{
+    padding: .3rem;
+    text-align: center;
+}

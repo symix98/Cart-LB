@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Order Line</h2>
+    <table style="width:100%">
+        <tr>
+            <th>Product Description</th>
+            <th>Product Quantity</th>
+            <th>Product Price</th>
+        </tr>
+        <tr *ngFor="let product of products ; let i = index">
+            <td style="width: 20ch; text-align: center;">{{ product?.pdesc }}</td>
+            <td style="text-align: center;">{{ orderlines[i]?.olqtty }}</td>
+            <td style="text-align: center;">{{ orderlines[i]?.olprice }}</td>
+        </tr>
+    </table>
+    <button (click)="completeIncompleteOrder('complete')" class="btn btn-success block">Complete</button>
+    <button (click)="completeIncompleteOrder('pending')" class="btn btn-success block">Incomplete</button>
+</div>

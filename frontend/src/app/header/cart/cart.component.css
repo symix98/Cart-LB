@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+#updateButtons{
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+.rounded-pill{
+    margin-right: .5rem;
+}
+.btn-success , .btn-warning{
+    width: 100%;
+}
+.btn-success{
+    margin-bottom: 1rem;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+    margin: 0;
+    width: 100%;
+}
+#cartItemsSection{
+    width: 60%;
+}
+#pricingSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    border: 1px solid lightgrey;
+    height: fit-content;
+    padding: 0 1rem 1rem 1rem;
+    width: 30%;
+}
+#products{
+    padding: 1rem 0 1rem 0;
+}
+h5{
+    padding: 1rem 0 1rem 0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 412px){
+    .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#pricingSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    height: fit-content;
+    width: fit-content;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (min-width: 1920px){
+    .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    width: 100vw;
+    padding: 0 1rem 0 1rem;
+}
+#cartItemsSection{
+    width: 60vw;
+}
+#pricingSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    border: 1px solid lightgrey;
+    height: fit-content;
+    width: 30vw;
+}
+#products{
+    padding: 1rem 0 1rem 0;
+}
+h5{
+    padding: 1rem 0 1rem 0;
+}
+}

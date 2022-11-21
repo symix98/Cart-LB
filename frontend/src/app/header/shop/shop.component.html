@@ -1,0 +1,20 @@
+<nav-bar></nav-bar>
+<div class="main">
+  <input class="searchBox" placeholder="Search Product" id="searchBox" type="text" (keyup.enter)="searchProduct($event)" />
+  <section class="cards">
+    <div class="cards_item" *ngFor="let product of products | paginate:{itemsPerPage: tableSize,currentPage: page,totalItems: count};let i = index">
+      <div class="card">
+        <img class="card-img-top" src="https://previews.123rf.com/images/stuartphoto/stuartphoto1206/stuartphoto120600282/14055075-coming-soon-stamp-showing-new-product-arrivals.jpg" alt="product" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">{{ product.pdesc }}</h4>
+          <p class="card-text">{{ product.pprice }} L.L</p>
+          <button class="btn card-btn" (click)="addToCart(product,$event)">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="d-flex justify-content-center">
+    <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)">
+    </pagination-controls>
+  </div>
+</div>

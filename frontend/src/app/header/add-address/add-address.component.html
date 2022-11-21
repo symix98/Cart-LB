@@ -1,0 +1,21 @@
+<div class="main">
+    <form [formGroup]="addressForm" (ngSubmit)="submitAddressForm()">
+        <div class="container">
+            <div class="form_group">
+                <label>Main Address:</label>
+                <input type="Username" class="form-control" formControlName="addrdesc" />
+            </div>
+            <div class="form_group">
+                <label>Address Details:</label>
+                <input type="text" class="form-control" formControlName="addrdetails" />
+            </div>
+            <div class="form_group">
+                <label>City:</label>
+                <select formControlName="addrcity" style="margin-left: .3rem;">
+                    <option *ngFor="let city of cities" value="{{ city }}">{{ city }}</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </form>
+</div>

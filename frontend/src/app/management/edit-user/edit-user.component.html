@@ -1,0 +1,20 @@
+<div class="main">
+    <form [formGroup]="userForm" (ngSubmit)="submitUserForm()">
+        <h2>Edit {{ username }}</h2>
+        <div class="container">
+            <div class="form_group">
+                <label>Password:</label>
+                <input type="password" class="form-control" formControlName="password" />
+            </div>
+            <div class="form_group">
+                <label for="level">Level:</label>
+                <select formControlName="level" style="margin-left: .3rem;">
+                    <option value="admin">Admin</option>
+                    <option value="data">Data entry</option>
+                    <option value="sales">Sales</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </form>
+</div>

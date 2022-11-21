@@ -1,0 +1,19 @@
+<div class="main">
+    <form [formGroup]="userForm" (ngSubmit)="submitUserForm()">
+        <div class="container">
+            <div class="form_group">
+                <label>Username:</label>
+                <input type="Username" class="form-control" formControlName="username" />
+            </div>
+            <div class="form_group">
+                <label>Password:</label>
+                <input type="password" class="form-control" formControlName="password" />
+            </div>
+            <div class="form_group">
+                <label>Level:</label>
+                <input type="text" class="form-control" formControlName="level" />
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </form>
+</div>

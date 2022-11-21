@@ -1,0 +1,35 @@
+<!-- <form [formGroup]="LoginForm" (ngSubmit)="submitUserLogin()">
+    <div class="imgcontainer">
+        <img src="https://cahsi.utep.edu/wp-content/uploads/kisspng-computer-icons-user-clip-art-user-5abf13db5624e4.1771742215224718993529.png"
+            alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" required formControlName="username">
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" required formControlName="password">
+
+        <button id="submit" type="submit">Login</button>
+    </div>
+</form> -->
+<body>
+<div class="left"></div>
+<div class="right">
+  <h1>Welcome</h1>
+  <form [formGroup]="LoginForm" (ngSubmit)="submitUserLogin()">
+    <fieldset>
+        <label for="username">Username or Email</label>
+        <input type="text" name="username" id="uu" required formControlName="username">
+        <label for="passowrd">Password</label>
+        <input type="password" required formControlName="password">
+        <button class="primaryBtn" type="submit">Sign in</button>
+        <div class="separator"></div>
+        <span>Don't have an account yet?</span>
+        <button class="secondaryBtn" type="button" [routerLink]="['/register']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+          true}">Sign up</button>
+      </fieldset>
+  </form>
+ </div>
+</body>

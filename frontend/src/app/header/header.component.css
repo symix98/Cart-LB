@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+/* Body Style Body Style Body Style Body Style Body Style Body Style Body Style Body Style  */
+/* Body Style Body Style Body Style Body Style Body Style Body Style Body Style Body Style  */
+/* Body Style Body Style Body Style Body Style Body Style Body Style Body Style Body Style  */
+/* Body Style Body Style Body Style Body Style Body Style Body Style Body Style Body Style  */
+#firstDiv > img{
+  margin-top: 12.5rem;
+  margin-left: 3.125rem;
+}
+
+#secondDiv > img{
+  min-height: 100%;
+  min-width: 100%;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+  }
+
+h1{
+  margin-left: 3.125rem;
+  margin-top: 1.25rem;
+  font-size: 3.125rem;
+}
+h4{
+  font-size: 20px;
+}
+
+#text{
+  width: 60ch;
+  margin-left: 3.125rem;
+  margin-top: .938rem;
+}
+
+button{
+  border-radius: 1.875rem;
+  padding: 0.625rem 1.875rem;
+  margin-top: .938rem;
+}
+
+#sec1{
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#secondDiv > img{
+  width: 50%;
+  height: 100%;
+}
+#sec3{
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 1.875rem;
+}
+#cardContainer{
+  width: 30%;
+}
+.card {
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 1rem;
+  margin: .938rem;
+  height: 28.125rem;
+  border: 0;
+  border-radius: 10%;
+}
+.card > img{
+  align-self: center;
+  height: fit-content;
+  width: 7rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: .938rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.card:hover {
+  box-shadow: 0 5px 25px rgb(209, 107, 240);
+}
+
+/* Body Style Body Style Body Style Body Style Body Style Body Style Body Style Body Style  */
+/* Body Style Body Style Body Style Body Style Body Style Body Style Body Style Body Style  */
+/* Body Style Body Style Body Style Body Style Body Style Body Style Body Style Body Style  */
+/* Body Style Body Style Body Style Body Style Body Style Body Style Body Style Body Style  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style  */
+/* Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style  */
+/* Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style  */
+/* Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style  */
+#foodTypes{
+  background-color: #14734f;
+  color: #fff;
+  width: 100%;
+  height: 9.375rem;
+  border-right: 0.031rem solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#typeName{
+  margin-top: 0.313rem;
+}
+
+#btn{
+  background-color: #14734f;
+  border-radius: 0;
+  border: 0.063rem solid red;
+  width: fit-content;
+  color: #fff;
+  align-self: center;
+}
+
+
+#foodTypes:hover #typeName{
+  transform: scale(1.1);
+}
+
+#foodTypes:hover #icon{
+  transform: scale(1.1);
+}
+
+#sec2{
+  width: 100%;
+  height: 100%;
+  margin-top: 0.313rem;
+  display: flex;
+  flex-direction: row;
+}
+/* Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style  */
+/* Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style  */
+/* Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style  */
+/* Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style Menu Style  */
+
+
+@media (max-width: 600px) {
+  #banner{
+    content:url("../../assets/smart-flyer-phone.jpg");
+  }
+  .navigation a:not(:first-child) {display: none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+    font-size: 32px;
+    margin-right: 20px;
+  }
+  #svg{
+    display: none;
+  }
+  #findStore{
+  padding-left: 2rem;
+}
+#sec1{
+  padding-top: 30px;
+}
+#firstDiv{
+  margin-bottom: 15px;
+}
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a:not(:first-child) {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navigation.responsive a:not(:last-child) {
+    margin-top: 1rem;
+  }
+  /* Responsive Body Responsive Body Responsive Body Responsive Body Responsive Body */
+  /* Responsive Body Responsive Body Responsive Body Responsive Body Responsive Body */
+  /* Responsive Body Responsive Body Responsive Body Responsive Body Responsive Body */
+  /* Responsive Body Responsive Body Responsive Body Responsive Body Responsive Body */
+
+  header {
+    background-color: whitesmoke;
+    width: 100vw;
+    position: fixed;
+    padding: 1% .5%;
+}
+
+  #rightItem{
+  margin-left: 0;
+}
+
+  body{
+    font-size: 7px;
+  }
+
+  #sec1{
+    display: block;
+  }
+
+  #brnfrz{
+    width: 100px;
+    height: 50px;
+  }
+
+  #firstDiv > img{
+  margin-top: 3.5rem;
+  margin-left: .8rem;
+}
+
+h1{
+  margin-left: .7rem;
+  margin-top: .6rem;
+  font-size: 2.125rem;
+}
+
+button{
+  margin-left: .8rem;
+}
+
+#text{
+  width: fit-content;
+  margin-left: 1.125rem;
+  font-size: 12px;
+}
+
+  /* Responsive Body Responsive Body Responsive Body Responsive Body Responsive Body */
+  /* Responsive Body Responsive Body Responsive Body Responsive Body Responsive Body */
+  /* Responsive Body Responsive Body Responsive Body Responsive Body Responsive Body */
+  /* Responsive Body Responsive Body Responsive Body Responsive Body Responsive Body */
+
+
+
+/* Categories Responsive Categories Responsive Categories Responsive Categories Responsive */
+/* Categories Responsive Categories Responsive Categories Responsive Categories Responsive */
+/* Categories Responsive Categories Responsive Categories Responsive Categories Responsive */
+/* Categories Responsive Categories Responsive Categories Responsive Categories Responsive */
+
+#sec3{
+  width: 100%;
+  height: fit-content;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+#cardContainer{
+  width: 100%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: .5rem;
+  margin: .5rem;
+  height: 22rem;
+  border: 0;
+}
+.container{
+  margin-top: .938rem;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+h4{
+  font-size: 25px;
+}
+.container > p{
+  font-size: 20px;
+}
+
+/* Categories Responsive Categories Responsive Categories Responsive Categories Responsive */
+/* Categories Responsive Categories Responsive Categories Responsive Categories Responsive */
+/* Categories Responsive Categories Responsive Categories Responsive Categories Responsive */
+/* Categories Responsive Categories Responsive Categories Responsive Categories Responsive */
+}
+@media (max-width: 412px) {
+  .card {
+  display: flex;  
+  justify-content: center;
+  align-items: center;  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 2rem;
+  margin: 1.38rem;
+  height: 28.125rem;
+  border: 0;
+  border-radius: 10%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: .338rem;
+  width: fit-content;
+  height: fit-content;
+}
+  .card > img{
+  height: 200px;
+  width: 150px;
+  }
+}

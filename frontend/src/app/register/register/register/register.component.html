@@ -1,0 +1,41 @@
+<!-- <form [formGroup]="RegisterForm" (ngSubmit)="submitUserRegister()">
+    <div id="login-box">
+        <div class="left">
+            <h1>Sign up</h1>
+            <input type="text" placeholder="Name" formControlName="cname" />
+            <input type="text" placeholder="Middle Name" formControlName="cmid" />
+            <input type="text" placeholder="Last Name" formControlName="clast" />
+            <input type="text" placeholder="Phone" formControlName="cphone" />
+            <input type="text" placeholder="Username" formControlName="username" />
+            <input type="password" placeholder="Password" formControlName="password" />
+            <button type="submit" class="btn btn-success">Register</button>
+        </div>
+    </div>
+</form> -->
+
+
+<body>
+    <div class="left"></div>
+    <div class="right">
+      <h1>Welcome</h1>
+      <form [formGroup]="RegisterForm" (ngSubmit)="submitUserRegister()">
+            <label>First Name</label>
+            <input type="text" required formControlName="cname">
+            <label>Middle Name</label>
+            <input type="text" required formControlName="cmid">
+            <label>Last Name</label>
+            <input type="text" required formControlName="clast">
+            <label>Phone</label>
+            <input type="text" required formControlName="cphone">
+            <label>Username</label>
+            <input type="text" required formControlName="username">
+            <label>Password</label>
+            <input type="password" required formControlName="password">
+            <button class="primaryBtn" type="submit">Sign Up</button>
+            <div class="separator"></div>
+            <span>Already have an account?</span>
+            <button class="secondaryBtn" type="button" [routerLink]="['/login']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+              true}">Sign in</button>
+      </form>
+     </div>
+    </body>

@@ -1,0 +1,27 @@
+/* .main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 2% 0% 2% 2%;
+}
+.form-control, .btn{
+    width: 210%;
+}
+.btn{
+    margin-top: 5px;
+}
+.container > div{
+    padding-bottom: 1rem;
+}
+@media (max-width: 412px){
+    .form-control, .btn{
+    width: 200%;
+}
+} */
+.container > div{
+    padding: 1rem 0 1rem 0;
+}
+.btn{
+    width: 100%;
+    margin-bottom: 1rem;
+}

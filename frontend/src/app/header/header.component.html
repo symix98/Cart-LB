@@ -1,0 +1,73 @@
+<nav-bar></nav-bar>
+<section>
+    <img id="banner" src="../../assets/smart-flyer-desktop.jpg" alt="flyer">
+</section>
+<!-- <section id="sec2">
+    <div (click)="viewSubCategories('hotfood')" id="foodTypes"><i id="icon" style="color: #fff;"
+            class="fa-solid fa-burger fa-4x"></i>
+        <p id="typeName">Hot Foods</p>
+    </div>
+    <div (click)="viewSubCategories('snackfood')" id="foodTypes"><i id="icon" style="color: #fff;"
+            class="fa-solid fa-cookie-bite fa-4x"></i>
+        <p id="typeName">Snack Food</p>
+    </div>
+    <div (click)="viewSubCategories('coffee')" id="foodTypes"><i id="icon" style="color: #fff;"
+            class="fa-solid fa-mug-hot fa-4x"></i>
+        <p id="typeName">Coffee</p>
+    </div>
+    <div (click)="viewSubCategories('icecream')" id="foodTypes"><i id="icon" style="color: #fff;"
+            class="fa-solid fa-ice-cream fa-4x"></i>
+        <p id="typeName">Ice Cream</p>
+    </div>
+</section> -->
+
+<section *ngIf="isHotFood" id="sec3">
+    <div id="cardContainer" *ngFor="let hotfood of hotFoods">
+        <div class="card">
+            <img src="{{ hotfood.url }}" alt="Avatar" width="100%" height="250">
+            <div class="container">
+                <h4><b>{{ hotfood.title }}</b></h4>
+                <p>{{ hotfood.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section *ngIf="isSnackFood" id="sec3">
+    <div id="cardContainer" *ngFor="let snackfood of snackFoods">
+        <div class="card">
+            <img src="{{ snackfood.imageurl }}" alt="Avatar">
+            <div class="container">
+                <h4>{{ snackfood.pdesc }}</h4>
+                <p>{{ snackfood.pprice }} LBP</p>
+                <button class="btn btn-warning" id="{{ snackfood.pid }}" (click)="addToCart(snackfood,$event)">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section *ngIf="isCoffee" id="sec3">
+    <div id="cardContainer" *ngFor="let coffee of Coffee">
+        <div style="background-color: #f0cb99;" class="card">
+            <img src="{{ coffee.url }}" alt="Avatar" width="100%" height="250">
+            <div class="container">
+                <h4><b>{{ coffee.title }}</b></h4>
+                <p>{{ coffee.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section *ngIf="isIceCream" id="sec3">
+    <div id="cardContainer" *ngFor="let icecream of iceCreams">
+        <div class="card">
+            <img src="{{ icecream.url }}" alt="Avatar" width="100%" height="250">
+            <div class="container">
+                <h4><b>{{ icecream.title }}</b></h4>
+                <p>{{ icecream.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>

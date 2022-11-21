@@ -1,0 +1,11 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+.container{
+    width: 30vw;
+}
+.form_group{
+    margin-bottom: 1rem;
+}

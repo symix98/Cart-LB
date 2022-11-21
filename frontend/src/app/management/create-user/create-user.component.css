@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 2% 0% 2% 2%;
+}
+.form-control, .btn{
+    width: 220%;
+}
+.btn{
+    margin-top: 5px;
+}

@@ -1,0 +1,88 @@
+#users > h2 , #buttons{
+  margin: 1rem 0 1rem 1rem;
+}
+#allUsers > div{
+  margin: 1rem 0 1rem 1rem;
+}
+.createUserContainer{
+  margin: 1rem 0 1rem 1rem;
+}
+.createUserContainer > div{
+  padding-bottom: 1rem;
+}
+.form_group{
+  width: 50vw;
+}
+.main > form > button , h2{
+  margin: 0 0 1rem 1rem;
+}
+#createProductContainer{
+  margin: 1rem 0 1rem 1rem;
+}
+#createProductContainer > div{
+  padding-bottom: 1rem;
+}
+.cardContainer{
+  display: flex;
+  flex-direction: row;
+}
+#sec3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 1.875rem;
+}
+.card{
+  width: 20rem;
+  margin: 0 0 1rem 1rem;
+  height: 25rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.4s;
+}
+.card:hover {
+  box-shadow: 0 5px 25px rgb(209, 107, 240);
+}
+.card > img{
+  align-self: center;
+  height: fit-content;
+  width: 7rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: .938rem;
+  width: fit-content;
+  height: fit-content;
+}
+h4{
+  font-size: 20px;
+  text-align: center;
+}
+.container > button{
+  border-radius: 1.875rem;
+}
+.example-margin{
+  margin-left: 1rem;
+}
+@media (max-width: 450px){
+  #buttonsOrderManagemenet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin-left: 1rem;
+  }
+  #buttonsOrderManagemenet > button{
+    margin-bottom: 1rem;
+  }
+  #buttons > button{
+    font-size:xx-small;
+  }
+}

@@ -1,0 +1,35 @@
+<nav-bar></nav-bar>
+
+<div class="main" *ngIf="totalPrice else emptyCartTemplate">
+    <section id="cartItemsSection">
+        <ol class="list-group" id="products" *ngFor="let product of products ; let i = index">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="{{ product.imageurl }}" alt="Avatar" width="100" height="100">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">{{ product.pdesc }}</div>
+                    {{ product.pprice }} LBP
+                    <br />
+                    <div id="buttons">
+                        <button id="updateButtons" class="btn btn-primary"
+                            (click)="updateQuantity('sub',product.pid,i)">-</button>
+                        <span class="badge bg-primary rounded-pill">{{ productsCartItems.cartItems[i].olqtty }}</span>
+                        <button id="updateButtons" class="btn btn-primary"
+                            (click)="updateQuantity('add',product.pid,i)">+</button>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section id="pricingSection">
+        <h5>Total Price: <span>{{ totalPrice }} LBP</span></h5>
+        <!-- <h5>Delivery Charge: 25,000LBP</h5> -->
+        <!-- <h5>Net Price: <span>{{ totalPrice }} LBP</span></h5> -->
+        <a id="checkout"  [routerLink]="['/checkout']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}" class="btn btn-success">Procceed To Checkout</a>
+    </section>
+</div>
+<ng-template #emptyCartTemplate>
+    <div class="wrapper">
+    <img id="banner" src="https://i.pinimg.com/736x/2e/ac/fa/2eacfa305d7715bdcd86bb4956209038--android.jpg" alt="flyer">
+</div>
+</ng-template>

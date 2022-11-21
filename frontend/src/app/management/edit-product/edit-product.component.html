@@ -1,0 +1,27 @@
+<div class="main">
+    <form [formGroup]="ProductForm" (ngSubmit)="submitProduct()">
+        <h2>Edit Product</h2>
+        <div class="container">
+            <div class="form_group">
+                <label>Description:</label>
+                <input type="text" class="form-control" #desc formControlName="description" />
+            </div>
+            <div class="form_group">
+                <label>Price:</label>
+                <input type="text" class="form-control" #prc formControlName="price" />
+            </div>
+            <div class="form_group">
+                <label>Image URL:</label>
+                <input type="text" class="form-control" #img formControlName="imageurl" />
+            </div>
+            <div class="form_group">
+                <label for="showhide">Show/Hide:</label>
+                <select formControlName="ShowHide" style="margin-left: .3rem;">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Insert</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/']"><img id="logo" src="../../../assets/smartlogo.png" alt="logo"></a>
+    <a id="orderNowBesideLogo" class="nav-link active" aria-current="page" [routerLink]="['/shop']"
+      routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+      true}">Order Now</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color: whitesmoke;" id="orderNowInHamburger" class="nav-link active" aria-current="page"
+            [routerLink]="['/shop']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">Order Now</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a id="findStore" href="https://goo.gl/maps/QobWk4VvMKNcy2hEA" target="_blank">Find Us <i
+            class="ri-map-pin-line"></i></a>
+        <a href="https://api.whatsapp.com/message/X22V52KVNTA3N1" target="_blank">Whatsapp <i
+            class="ri-whatsapp-line"></i>
+        </a>
+        <a mat-button [matMenuTriggerFor]="beforeMenu">{{user || 'login'}}<i class="ri-user-line"></i></a>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+          <button *ngIf="user" mat-menu-item (click)="logout()">Logout</button>
+          <button *ngIf="!user" mat-menu-item [routerLink]="['/login']" routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact:
+              true}">Login</button>
+          <button *ngIf="!user" mat-menu-item [routerLink]="['/register']" routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact:
+              true}">Signup</button>
+        </mat-menu>
+        <a id="cartIcon" [routerLink]="['/cart']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+              true}">Cart <i class="ri-shopping-cart-2-line"></i></a>
+      </form>
+    </div>
+  </div>
+</nav>
